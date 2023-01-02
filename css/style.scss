@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-@import "partials/colors";
+@import "partials/_colors.scss";
 @import "partials/layout";
 @import "partials/tipography";
 @import "partials/buttons";
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: $white-dark;
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;

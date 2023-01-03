@@ -10,35 +10,140 @@ $container-s: 540px;
 // Mixins of media query
 
 @mixin responsive($device) {
-  @if $device == xl {
+  @if $device ==xl {
+
     // For resolutions upper than 1440px
     @media screen and (min-width: $container-xl) {
       // Esse content serve pra nao ter que definir as regras aqui dentro e sim na declaração em outros arquivos, como o corpo da função chamada
       @content;
     }
   }
-  @else if $device == l {
+
+  @else if $device ==l {
+
     // For resolutions between 1140 and 1440px
     @media screen and (max-width: $container-xl) and (min-width: $container-l) {
       @content;
     }
   }
-  @else if $device == m {
+
+  @else if $device ==m {
+
     // For resolutions between 1140 and 960px
     @media screen and (max-width: $container-l) and (min-width: $container-m) {
       @content;
     }
   }
-  @else if $device == s {
+
+  @else if $device ==s {
+
     // For resolution less than 960px
     @media screen and (max-width: $container-m) {
       @content;
     }
   }
-  @else if $device == xs {
+
+  @else if $device ==xs {
+
     // For resolution less than 540px
     @media screen and (max-width: $container-s) {
       @content;
     }
+  }
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: $container-xl;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 96px 24px;
+
+  @include responsive(s) {
+    flex-direction: column;
+    padding: 32px 18px;
+  }
+}
+
+.flex-start {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-item-1 {
+  flex: 1 1 360px;
+}
+
+.flex-item-2 {
+  flex: 2 1 360px;
+}
+
+.flex-item-3 {
+  flex: 3 1 360px;
+}
+
+.flex-item-4 {
+  flex: 4 1 360px;
+}
+
+.flex-item-5 {
+  flex: 5 1 360px;
+}
+
+.flex-item-auto {
+  flex: 2 1 auto;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.hero {
+  height: 90vh;
+
+  @include responsive(s) {
+    height: auto;
   }
 }

@@ -44,10 +44,10 @@ header {
 
 .logo {
   align-items: center;
-  background-color: red;
-  height: 41px;
+  height: 48px;
+  display: flex;
   justify-content: center;
-  width: 41px;
+  width: 48px;
   z-index: 999;
 }
 
@@ -246,6 +246,22 @@ header {
   flex-direction: column;
   list-style: none;
   max-width: $container-xl;
+
+  svg {
+    height: 36px;
+    width: 36px;
+    
+    path {
+      stroke: $gray-7;
+      transition: .5s ease;
+    }
+
+    &:hover {
+      path {
+        stroke: $primary-normal;
+      }
+    }
+  }
 }
 
 .nav-link-mobile {

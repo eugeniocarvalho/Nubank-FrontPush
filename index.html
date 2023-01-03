@@ -13,66 +13,90 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/svg-inject.min.js"></script>
 </head>
 
 <body>
   <!-- ========== HEADER ========== -->
   <header id="header">
-  <!-- ========== NAVBAR MOMBILE ========== -->
+    <!-- ========== NAVBAR MOMBILE ========== -->
     <nav class="navbar-mobile">
       <div class="bx" id="bx"></div>
-      <div class="logo"></div>
+      <div class="logo"><a href="#"><img src="svg/logonu.svg" alt="logo Nubank" onload="SVGInject(this)"></a></div>
       <a href="#">Login</a>
     </nav>
 
-  <!-- ========== NAVBAR DESKTOP ========== -->
-  <nav class="navbar-desktop">
-    <div class="navbar-desktop-item-1">
-      <div class="logo"></div>
-      <ul class="menu-desktop">
-        <li class="menu-item" id="menu-item-1">
-          <a href="#" class="nav-link-desktop">Nubank</a>
-          <ul class="dropdown-menu" id="dropdown-item-1">
-            <li class="dropdown-item"><a href="#" class="nav-link-dropdown">O Nu</a></li>
-            <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Carreiras</a></li>
-            <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Imprensa</a></li>
-          </ul>
-        </li>
-        <li class="menu-item" id="menu-item-2">
-          <a href="#" class="nav-link-desktop">Conta Digital</a>
-          <ul class="dropdown-menu" id="dropdown-item-2">
-            <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Crie sua conta</a></li>
-            <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Transferências</a></li>
-            <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Rendimento</a></li>
-          </ul>
-        </li>
-        <li class="menu-item" id="menu-item-3">
-          <a href="#" class="nav-link-desktop">Pra você</a>
-          <ul class="dropdown-menu" id="dropdown-item-3">
-            <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Comunidade</a></li>
-            <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Rewards</a></li>
-            <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Novidades</a></li>
-          </ul>
+    <!-- ========== NAVBAR DESKTOP ========== -->
+    <nav class="navbar-desktop">
+      <div class="navbar-desktop-item-1">
+        <div class="logo"><a href="#"><img src="svg/logonu.svg" alt="logo Nubank" onload="SVGInject(this)"></a></div>
+        <ul class="menu-desktop">
+          <li class="menu-item" id="menu-item-1">
+            <a href="#" class="nav-link-desktop">Nubank</a>
+            <ul class="dropdown-menu" id="dropdown-item-1">
+              <li class="dropdown-item"><a href="#" class="nav-link-dropdown">O Nu</a></li>
+              <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Carreiras</a></li>
+              <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Imprensa</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" id="menu-item-2">
+            <a href="#" class="nav-link-desktop">Conta Digital</a>
+            <ul class="dropdown-menu" id="dropdown-item-2">
+              <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Crie sua conta</a></li>
+              <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Transferências</a></li>
+              <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Rendimento</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" id="menu-item-3">
+            <a href="#" class="nav-link-desktop">Pra você</a>
+            <ul class="dropdown-menu" id="dropdown-item-3">
+              <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Comunidade</a></li>
+              <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Rewards</a></li>
+              <li class="dropdown-item"><a href="#" class="nav-link-dropdown">Novidades</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-desktop-item-2">
+        <a href="#" class="btn mr-2">Quero ser Nubank</a>
+        <a href="#">Login</a>
+      </div>
+    </nav>
+
+    <!-- ========== NAVBAR MOBILE ========== -->
+    <nav class="menu-mobile" id="menu-mobile">
+      <ul class="nav-list-mobile">
+        <li class="mb-1"><a href="#" class="nav-link-mobile">Nubank</a></li>
+        <li class="mb-1"><a href="#" class="nav-link-mobile">Conta Digital</a></li>
+        <li class="mb-1"><a href="#" class="nav-link-mobile">Pra você</a></li>
+        <li class="mb-1"><a href="#" class="nav-link-mobile">Quero ser Nubank</a></li>
+        <li class="mb-1"><a href="#" class="nav-link-mobile">Redes Sociais</a></li>
+
+        <li class="mt-3 flex-center">
+          <a href="#"><img src="svg/icon-facebook.svg" class="mx-1" alt="Facebook" onload="SVGInject(this)"></a>
+          <a href="#"><img src="svg/icon-youtube.svg" class="mx-1" alt="Youtube" onload="SVGInject(this)"></a>
+          <a href="#"><img src="svg/icon-instagram.svg" class="mx-1" alt="Instagram" onload="SVGInject(this)"></a>
+          <a href="#"><img src="svg/icon-twitter.svg" class="mx-1" alt="Twitter" onload="SVGInject(this)"></a>
         </li>
       </ul>
-    </div>
-    <div class="navbar-desktop-item-2">
-      <a href="#" class="btn">Quero ser Nubank</a>
-      <a href="#">Login</a>
-    </div>
-  </nav>
-
-  <!-- ========== NAVBAR MOBILE ========== -->
-  <nav class="menu-mobile" id="menu-mobile">
-    <ul class="nav-list-mobile">
-      <li><a href="#" class="nav-link-mobile">Nubank</a></li>
-      <li><a href="#" class="nav-link-mobile">Conta Digital</a></li>
-      <li><a href="#" class="nav-link-mobile">Pra você</a></li>
-      <li><a href="#" class="nav-link-mobile">Quero ser Nubank</a></li>
-      <li><a href="#" class="nav-link-mobile">Redes Sociais</a></li>
-    </ul>
-  </nav>
+    </nav>
   </header>
+
+  <!-- ========== HERO ========== -->
+  <main class="container border hero py-5">
+    <div class="flex-item-1 py-3">
+      <h1>Ser Nubank é reiventar sua vida financeira.</h1>
+      <p class="my-2">Conta com rendimento acima da poupança, cartão de crédito sem anuidade e o melhor: resolva tudo pelo App.</p>
+      <div class="flex-start">
+        <a href="#" class="btn">Quero ser Nubank</a>
+        <a href="#"><img src="svg/appstore.svg" class="ml-1" alt="App Store" onload="SVGInject(this)"></a>
+        <a href="#"><img src="svg/playstore.svg" class="ml-1" alt="Play Store" onload="SVGInject(this)"></a>
+      </div>
+    </div>
+    <div class="flex-item-3">
+
+    </div>
+  </main>
 
   <!-- ========== JS ========== -->
   <script src="js/app.js"></script>

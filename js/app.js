@@ -19,6 +19,7 @@ const menuItem2 = document.getElementById("menu-item-2");
 const menuItem3 = document.getElementById("menu-item-3");
 
 function showDropdown1(event) {
+  console.log(event)
   event.preventDefault();
   dropdownMenu1.classList.toggle("active-dropdown-menu");
   dropdownMenu2.classList.remove("active-dropdown-menu")
@@ -39,23 +40,28 @@ function showDropdown3(event) {
   dropdownMenu3.classList.toggle("active-dropdown-menu")
 }
 
-function RemoveDropdown1() {
-  dropdownMenu1.classList.remove("active-dropdown-menu")
-}
-
-function RemoveDropdown2() {
-  dropdownMenu2.classList.remove("active-dropdown-menu")
-}
-
-
-function RemoveDropdown3() {
-  dropdownMenu3.classList.remove("active-dropdown-menu")
+function RemoveDropdown(event) {
+  event.srcElement.classList.remove("active-dropdown-menu")
 }
 
 menuItem1.addEventListener("click", showDropdown1);
 menuItem2.addEventListener("click", showDropdown2);
 menuItem3.addEventListener("click", showDropdown3);
 
-dropdownMenu1.addEventListener("mouseleave", RemoveDropdown1);
-dropdownMenu2.addEventListener("mouseleave", RemoveDropdown2);
-dropdownMenu3.addEventListener("mouseleave", RemoveDropdown3);
+dropdownMenu1.addEventListener("mouseleave", RemoveDropdown);
+dropdownMenu2.addEventListener("mouseleave", RemoveDropdown);
+dropdownMenu3.addEventListener("mouseleave", RemoveDropdown);
+
+const showMenuMobile = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId);
+  const nav = document.getElementById(navId);
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active-menu-mobile");
+      toggle.classList.toggle("active-bx");
+    });
+  }
+};
+
+showMenuMobile("bx", "menu-mobile");

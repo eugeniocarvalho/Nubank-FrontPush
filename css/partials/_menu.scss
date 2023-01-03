@@ -48,9 +48,11 @@ header {
   height: 41px;
   justify-content: center;
   width: 41px;
+  z-index: 999;
 }
 
-.menu-desktop, .dropdown-menu {
+.menu-desktop,
+.dropdown-menu {
   list-style: none;
 }
 
@@ -150,16 +152,123 @@ header {
 
 .navbar-mobile {
   display: none;
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 10px 24px;
 
   @include responsive(s) {
-    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.bx {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+  width: 36px;
+  z-index: 999;
+
+  &::after {
+    background-color: $primary-normal;
+    content: '';
+    height: 2px;
+    left: 16%;
+    position: absolute;
+    top: 36%;
+    transition: .7s ease;
+    width: 70%;
+  }
+
+  &::before {
+    background-color: $primary-normal;
+    content: '';
+    height: 2px;
+    left: 16%;
+    position: absolute;
+    top: 64%;
+    transition: .7s ease;
+    width: 70%;
+  }
+}
+
+.active-bx {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+  transition: .7s ease;
+  width: 36px;
+  z-index: 999;
+
+  &::after {
+    background-color: $primary-normal;
+    content: '';
+    height: 2px;
+    left: 16%;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-495deg);
+    width: 70%;
+  }
+
+  &::before {
+    background-color: $primary-normal;
+    content: '';
+    height: 2px;
+    left: 16%;
+    position: absolute;
+    top: 50%;
+    transform: rotate(315deg);
+    width: 70%;
   }
 }
 
 .menu-mobile {
-  display: none;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(0, -100px, 0);
+  transition: 1s ease;
+  width: 100vw;
+}
 
-  @include responsive(s) {
-    display: block;
+.active-menu-mobile {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nav-list-mobile {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  max-width: $container-xl;
+}
+
+.nav-link-mobile {
+  display: inline-block;
+  color: $gray-2;
+  @include typeface-1(h3, desktop);
+  padding: 16px 24px;
+  position: relative;
+
+  &::after {
+    background-color: $secondary-normal;
+    content: '';
+    left: 16px;
+    position: absolute;
+    top: 90%;
+    transition: .5s ease;
+    width: 0;
+    height: 2px;
+  }
+
+  &:hover {
+    &::after {
+      width: 90%;
+    }
   }
 }

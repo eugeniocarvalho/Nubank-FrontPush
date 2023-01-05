@@ -1,0 +1,93 @@
+// ANIMATIONS
+$width-card: 340px;
+$height-card: 0.64 * $width-card;
+
+.div-card {
+  perspective: 500px;
+  position: relative;
+}
+
+.card {
+  animation: flip-card 12s linear infinite alternate,
+        change-bg-card 12s linear infinite alternate;
+  border-radius: 12px;
+  height: $height-card;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  width: $width-card;
+  z-index: -1;
+}
+
+@keyframes flip-card {
+  0% {
+    transform: rotateX(-10deg) rotateY(10deg) rotateY(-15deg);
+  }
+
+  40% {
+    transform: rotateX(0deg) rotateY(20deg);
+  }
+
+  60% {
+    transform: rotateX(180deg) rotateY(20deg);
+  }
+
+  100% {
+    transform: rotateX(190deg) rotateY(10deg) rotateY(15deg);
+  }
+}
+
+@keyframes change-bg-card {
+  0%, 49.9% {
+    background-image: url(../../svg/nubank.svg);
+    background-size: cover;
+  }
+
+  52%, 100% {
+    background-image: url(../../svg/nubank-verse.svg);
+    background-size: cover;
+  }
+}
+
+.icon-card-hero {
+  animation: icons-hero 7s ease 0.5s infinite alternate;
+  left: -30px;
+  position: absolute;
+  top: -0px;
+  z-index: 200;
+}
+
+.icon-contactless-hero {
+  animation: icons-hero 7s ease 1s infinite alternate;
+  left: 30px;
+  position: absolute;
+  top: 350px;
+  z-index: 200;
+
+  @include responsive(s) {
+    top: 320px;
+    left: 120px;
+  }
+}
+
+.icon-mobile-hero {
+  animation: icons-hero 7s ease 2.5s infinite alternate;
+  left: -250px;
+  position: absolute;
+  top: 150px;
+  z-index: 200;
+
+  @include responsive(s) {
+    top: 350px;
+    left: -100px;
+  }
+}
+
+@keyframes icons-hero {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}

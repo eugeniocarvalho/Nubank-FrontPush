@@ -91,3 +91,38 @@ $height-card: 0.64 * $width-card;
     transform: translate3d(10px, -40px, 0);
   }
 }
+
+.bg-home-blur1 {
+  transform: translate3d(0, -100px, 0);
+}
+
+.bg-home-blur2 {
+  transform: translate3d(0, -100px, 0);
+}
+
+
+.bg-home-rect1 {
+  animation: bg-home-rect 2s ease infinite alternate;
+}
+
+.bg-home-rect2 {
+  animation: bg-home-rect 3s ease 0.5s infinite alternate;
+}
+
+.bg-home-rect3 {
+  animation: bg-home-rext 3s ease 1s infinite alternate;
+}
+
+.bg-home-rect4 {
+  animation: bg-home-rect 3s ease 1.5s infinite alternate;
+}
+
+@keyframes bg-home-rect {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 30px, 0);
+  }
+}

@@ -140,10 +140,27 @@ $container-s: 540px;
   overflow: hidden;
 }
 
+// HERO
 .hero {
   height: 90vh;
 
   @include responsive(s) {
     height: auto;
+  }
+}
+
+.bg-home {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.svg-bg-home {
+  width: 150%;
+
+  @include responsive(xl) {
+    width: 100%;
   }
 }

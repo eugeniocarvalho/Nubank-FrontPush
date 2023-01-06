@@ -585,6 +585,7 @@ svg, img {
 header {
   background-color: transparent;
   box-shadow: none;
+  height: 72px;
   position: fixed;
   transition: 0.5s ease;
   width: 100%;

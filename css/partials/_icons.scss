@@ -1,3 +1,167 @@
 .dropshadow {
   filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
 }
+
+.bg-icon-mobile {
+  &::after {
+    background-image: url(../../svg/icon-mobile.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    transition: .5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-arrow {
+  &::after {
+    background-image: url(../../svg/icon-arrow.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    transition: .5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-card {
+  &::after {
+    background-image: url(../../svg/icon-card.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    transition: .5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-cash {
+  &::after {
+    background-image: url(../../svg/icon-cash.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    transition: .5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-check {
+  &::after {
+    background-image: url(../../svg/icon-check.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    height: 40px;
+    left: 8px;
+    transition: .5s ease;
+
+    width: 40px;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-config {
+  &::after {
+    background-image: url(../../svg/icon-config.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    transition: .5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-contactless {
+  &::after {
+    background-image: url(../../svg/icon-contactless.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    transition: .5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-phone {
+  &::after {
+    background-image: url(../../svg/icon-phone.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    transition: .5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-time {
+  &::after {
+    background-image: url(../../svg/icon-time.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    transition: .5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-transfer {
+  &::after {
+    background-image: url(../../svg/icon-transfer.svg);
+    background-size: cover;
+    cursor: pointer;
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    transition: .5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}

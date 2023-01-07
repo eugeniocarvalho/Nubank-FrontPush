@@ -164,3 +164,20 @@ $container-s: 540px;
     width: 100%;
   }
 }
+
+.list-item {
+  list-style: none;
+  margin-bottom: 48px;
+  position: relative;
+  padding: 8px 8px 8px 72px;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 64px;
+    left: -8px;
+    position: absolute;
+    top: 0;
+    width: 64px;
+  }
+}

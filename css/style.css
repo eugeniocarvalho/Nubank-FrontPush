@@ -119,6 +119,22 @@
   }
 }
 
+.list-item {
+  list-style: none;
+  margin-bottom: 48px;
+  position: relative;
+  padding: 8px 8px 8px 72px;
+}
+.list-item::after {
+  content: "";
+  display: block;
+  height: 64px;
+  left: -8px;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
@@ -254,6 +270,37 @@ a:hover {
 .btn:hover {
   transform: scale(1.02);
   box-shadow: 0px 17px 31px rgba(169, 80, 196, 0.27), 0px 5.125px 9.34559px rgba(169, 80, 196, 0.175929), 0px 2.12866px 3.88168px rgba(169, 80, 196, 0.135), 0px 0.769896px 1.40393px rgba(169, 80, 196, 0.094071);
+}
+
+.link {
+  background-image: url(../../svg/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  color: #82269E;
+  display: inline-block;
+  font-size: 18px;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 75%;
+  left: 56px;
+  width: 0%;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+  background-color: #bb71d2;
+}
+.link:hover {
+  opacity: 0.8;
+  padding-left: 64px;
+  background-position: 8px 50%;
+}
+.link:hover::after {
+  width: 80%;
 }
 
 .s-0 {
@@ -852,6 +899,119 @@ header {
 
 .dropshadow {
   filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-mobile::after {
+  background-image: url(../../svg/icon-mobile.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  transition: 0.5s ease;
+}
+.bg-icon-mobile:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-arrow::after {
+  background-image: url(../../svg/icon-arrow.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  transition: 0.5s ease;
+}
+.bg-icon-arrow:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-card::after {
+  background-image: url(../../svg/icon-card.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  transition: 0.5s ease;
+}
+.bg-icon-card:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-cash::after {
+  background-image: url(../../svg/icon-cash.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  transition: 0.5s ease;
+}
+.bg-icon-cash:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-check::after {
+  background-image: url(../../svg/icon-check.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  height: 40px;
+  left: 8px;
+  transition: 0.5s ease;
+  width: 40px;
+}
+.bg-icon-check:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-config::after {
+  background-image: url(../../svg/icon-config.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  transition: 0.5s ease;
+}
+.bg-icon-config:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-contactless::after {
+  background-image: url(../../svg/icon-contactless.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  transition: 0.5s ease;
+}
+.bg-icon-contactless:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-phone::after {
+  background-image: url(../../svg/icon-phone.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  transition: 0.5s ease;
+}
+.bg-icon-phone:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-time::after {
+  background-image: url(../../svg/icon-time.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  transition: 0.5s ease;
+}
+.bg-icon-time:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-transfer::after {
+  background-image: url(../../svg/icon-transfer.svg);
+  background-size: cover;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  transition: 0.5s ease;
+}
+.bg-icon-transfer:hover::after {
+  transform: scale(1.05);
 }
 
 .div-card {

@@ -181,3 +181,44 @@ $container-s: 540px;
     width: 64px;
   }
 }
+
+// SECTION BEST
+
+.best {
+  align-items: center;
+  border-radius: 50px;
+  background-color: $white-normal;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @include responsive(s) {
+    flex-direction: column;
+  }
+
+  &::after {
+    background-image: url(../../svg/entail.svg);
+    background-repeat: no-repeat;
+    content: '';
+    height: 124px;
+    left: 50%;
+    top: 0;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 124px;
+  }
+}
+
+.best-item {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 8px 0;
+  padding: 15px;
+
+  @include responsive(s) {
+    align-items: center;
+    justify-content: center;
+  }
+}

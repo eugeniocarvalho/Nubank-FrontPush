@@ -1381,4 +1381,164 @@ header {
   70%, 100% {
     opacity: 0;
   }
+}
+.fignu2-screen1 {
+  -webkit-animation: fignu2-screen1 18s ease infinite alternate;
+          animation: fignu2-screen1 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen1 {
+  0%, 15% {
+    opacity: 1;
+  }
+  20%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fignu2-screen1 {
+  0%, 15% {
+    opacity: 1;
+  }
+  20%, 100% {
+    opacity: 0;
+  }
+}
+.fignu2-screen2 {
+  -webkit-animation: fignu2-screen2 18s ease infinite alternate;
+          animation: fignu2-screen2 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen2 {
+  0%, 15% {
+    opacity: 0;
+  }
+  20%, 35% {
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fignu2-screen2 {
+  0%, 15% {
+    opacity: 0;
+  }
+  20%, 35% {
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+.fignu2-screen3 {
+  -webkit-animation: fignu2-screen3 18s ease infinite alternate;
+          animation: fignu2-screen3 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen3 {
+  0%, 35% {
+    opacity: 0;
+  }
+  40%, 55% {
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fignu2-screen3 {
+  0%, 35% {
+    opacity: 0;
+  }
+  40%, 55% {
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+.fignu2-screen4 {
+  -webkit-animation: fignu2-screen4 18s ease infinite alternate;
+          animation: fignu2-screen4 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen4 {
+  0%, 55% {
+    opacity: 0;
+  }
+  60%, 75% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fignu2-screen4 {
+  0%, 55% {
+    opacity: 0;
+  }
+  60%, 75% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+.fignu2-screen5 {
+  -webkit-animation: fignu2-screen5 18s ease infinite alternate;
+          animation: fignu2-screen5 18s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu2-screen5 {
+  0%, 75% {
+    opacity: 0;
+  }
+  85%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fignu2-screen5 {
+  0%, 75% {
+    opacity: 0;
+  }
+  85%, 100% {
+    opacity: 1;
+  }
+}
+.fignu2-icon1 {
+  -webkit-animation: fignu2-icon-move 3s ease 0s infinite alternate;
+          animation: fignu2-icon-move 3s ease 0s infinite alternate;
+}
+
+.fignu2-icon3 {
+  -webkit-animation: fignu2-icon-move 3s ease -2s infinite alternate;
+          animation: fignu2-icon-move 3s ease -2s infinite alternate;
+}
+
+.fignu2-icon5 {
+  -webkit-animation: fignu2-icon-move 3s ease -5s infinite alternate;
+          animation: fignu2-icon-move 3s ease -5s infinite alternate;
+}
+
+@-webkit-keyframes fignu2-icon-move {
+  0% {
+    transform: translate3d(0, -16px, 0);
+  }
+  100% {
+    transform: translate3d(-15px, 16px, 0);
+  }
+}
+
+@keyframes fignu2-icon-move {
+  0% {
+    transform: translate3d(0, -16px, 0);
+  }
+  100% {
+    transform: translate3d(-15px, 16px, 0);
+  }
 }/*# sourceMappingURL=style.css.map */

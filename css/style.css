@@ -1541,4 +1541,77 @@ header {
   100% {
     transform: translate3d(-15px, 16px, 0);
   }
+}
+.fignu3-card-front {
+  -webkit-animation: fignu3-card-move-front 3s ease-out -1s infinite alternate;
+          animation: fignu3-card-move-front 3s ease-out -1s infinite alternate;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes fignu3-card-move-front {
+  0% {
+    transform: translate3d(0, -40px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) rotate(5deg);
+  }
+}
+
+@keyframes fignu3-card-move-front {
+  0% {
+    transform: translate3d(0, -40px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) rotate(5deg);
+  }
+}
+.fignu3-card-verse {
+  -webkit-animation: fignu3-card-move-verse 3s ease 1s infinite alternate;
+          animation: fignu3-card-move-verse 3s ease 1s infinite alternate;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes fignu3-card-move-verse {
+  0% {
+    transform: translate3d(0, -40px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) rotate(-5deg);
+  }
+}
+
+@keyframes fignu3-card-move-verse {
+  0% {
+    transform: translate3d(0, -40px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) rotate(-5deg);
+  }
+}
+.fignu3-shadow {
+  -webkit-animation: fignu3-shadow 2s ease 1s infinite alternate;
+          animation: fignu3-shadow 2s ease 1s infinite alternate;
+  fill-opacity: 0.15;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes fignu3-shadow {
+  0% {
+    fill-opacity: 0.15;
+  }
+  100% {
+    fill-opacity: 0.4;
+  }
+}
+
+@keyframes fignu3-shadow {
+  0% {
+    fill-opacity: 0.15;
+  }
+  100% {
+    fill-opacity: 0.4;
+  }
 }/*# sourceMappingURL=style.css.map */

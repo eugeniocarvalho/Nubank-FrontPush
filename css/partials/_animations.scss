@@ -360,3 +360,21 @@ $height-card: 0.64 * $width-card;
     fill-opacity: .4;
   }
 }
+
+.fignu4-letter-u, .fignu4-letter-n {
+  animation: fignu4-letter 4s ease-in-out infinite alternate;
+}
+
+@keyframes fignu4-letter {
+  0% {
+    stroke-dasharray: 1 300;
+    stroke-opacity: .5;
+    stroke-width: 0;
+  }
+  
+  90%, 100% {
+    stroke-dasharray: 600 1;
+    stroke-opacity: 1;
+    stroke-width: 4;
+  }
+}

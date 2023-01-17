@@ -222,3 +222,10 @@ $container-s: 540px;
     justify-content: center;
   }
 }
+
+.fignu4-logo {
+  width: 60%;
+  @include responsive(s) {
+    width: 100%;
+  }
+}

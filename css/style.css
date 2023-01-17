@@ -175,6 +175,15 @@
   }
 }
 
+.fignu4-logo {
+  width: 60%;
+}
+@media screen and (max-width: 960px) {
+  .fignu4-logo {
+    width: 100%;
+  }
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;

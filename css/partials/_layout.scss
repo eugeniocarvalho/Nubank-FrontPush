@@ -84,6 +84,18 @@ $container-s: 540px;
   flex-direction: column;
 }
 
+.flex-top {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-spacebetween {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
 .relative {
   position: relative;
 }
@@ -254,4 +266,24 @@ $container-s: 540px;
   @include responsive(s) {
     transform: translate(-50%, -50%) scale(2);
   }
+}
+
+.list {
+  list-style: none;
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  a {
+    color: $secondary-light;
+  }
+}
+
+footer {
+  background: linear-gradient(220.94deg, #A950C4 14.43%, #82269E 85.28%);
+}
+
+.bt-purple {
+  border-top: 1px solid $secondary-light;
 }

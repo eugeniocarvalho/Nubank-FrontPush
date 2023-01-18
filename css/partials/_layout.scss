@@ -229,3 +229,29 @@ $container-s: 540px;
     width: 100%;
   }
 }
+
+.bg-invite {
+    overflow: hidden;
+    height: 100vh;
+
+    @include responsive(s) {
+      height: 70vh;
+    }
+}
+
+.svg-invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 100%;
+
+  @include responsive(m) {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  @include responsive(s) {
+    transform: translate(-50%, -50%) scale(2);
+  }
+}

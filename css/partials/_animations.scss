@@ -378,3 +378,29 @@ $height-card: 0.64 * $width-card;
     stroke-width: 4;
   }
 }
+
+.fignu5-ball1 {
+  animation: translate-ball 4s ease -3s infinite alternate;
+}
+
+.fignu5-ball2 {
+  animation: translate-ball 4s ease -2s infinite alternate;
+}
+
+.fignu5-ball3 {
+  animation: translate-ball 4s ease -1s infinite alternate;
+}
+
+.fignu5-ball4 {
+  animation: translate-ball 4s ease infinite alternate;
+}
+
+@keyframes translate-ball {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(200px, -100px, 0);
+  }
+}

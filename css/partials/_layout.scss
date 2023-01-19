@@ -247,7 +247,7 @@ $container-s: 540px;
     height: 100vh;
 
     @include responsive(s) {
-      height: 70vh;
+      height: 50vh;
     }
 }
 
@@ -277,6 +277,23 @@ $container-s: 540px;
 
   a {
     color: $secondary-light;
+  }
+}
+
+.link-itens {
+  @include responsive(s) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: start;
+  }
+}
+
+.footer-list {
+  margin-left: 16px;
+
+  @include responsive(s) {
+    margin-left: 0;
   }
 }
 

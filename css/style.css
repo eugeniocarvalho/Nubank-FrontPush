@@ -206,7 +206,7 @@
 }
 @media screen and (max-width: 960px) {
   .bg-invite {
-    height: 70vh;
+    height: 50vh;
   }
 }
 
@@ -237,6 +237,24 @@
 }
 .list a {
   color: #bb71d2;
+}
+
+@media screen and (max-width: 960px) {
+  .link-itens {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: start;
+  }
+}
+
+.footer-list {
+  margin-left: 16px;
+}
+@media screen and (max-width: 960px) {
+  .footer-list {
+    margin-left: 0;
+  }
 }
 
 footer {
@@ -424,6 +442,11 @@ a:hover {
 }
 .button-app:hover {
   filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)) drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)) drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)) drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+}
+@media screen and (max-width: 960px) {
+  .button-app {
+    max-height: 34px;
+  }
 }
 
 .s-0 {

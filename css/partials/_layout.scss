@@ -247,7 +247,7 @@ $container-s: 540px;
     height: 100vh;
 
     @include responsive(s) {
-      height: 50vh;
+      height: 60vh;
     }
 }
 
@@ -286,6 +286,14 @@ $container-s: 540px;
     flex-wrap: wrap;
     gap: 18px;
     justify-content: start;
+  }
+}
+
+.list-item {
+  margin: 32px 0;
+
+  @include responsive(xs) {
+    margin: 16px 0;
   }
 }
 

@@ -206,7 +206,7 @@
 }
 @media screen and (max-width: 960px) {
   .bg-invite {
-    height: 50vh;
+    height: 60vh;
   }
 }
 
@@ -245,6 +245,15 @@
     flex-wrap: wrap;
     gap: 18px;
     justify-content: start;
+  }
+}
+
+.list-item {
+  margin: 32px 0;
+}
+@media screen and (max-width: 540px) {
+  .list-item {
+    margin: 16px 0;
   }
 }
 

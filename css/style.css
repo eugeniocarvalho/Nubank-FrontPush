@@ -1007,8 +1007,10 @@ header {
 }
 
 .active-menu-mobile {
+  background-color: #f7f2fa;
   opacity: 1;
   pointer-events: all;
+  height: 104vh;
 }
 
 .nav-list-mobile {
